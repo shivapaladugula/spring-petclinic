@@ -1,5 +1,6 @@
-node {
-    stage('test') {
+pipeline {
+    agent any
+        stage('test') {
         sh 'echo hello'
     }
     stage('test1') {
