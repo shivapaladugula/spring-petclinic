@@ -1,10 +1,12 @@
 pipeline {
     agent any
+    stages{
         stage('test') {
         sh 'echo hello'
     }
     stage('test1') {
         git url: 'https://github.com/shivapaladugula/spring-petclinic.git',
         branch: 'main'
+    }
     }
 }
