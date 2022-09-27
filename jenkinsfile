@@ -1,17 +1,5 @@
-pipeline {
-    agent any
-    stages{
-        stage('test') {
-            steps{
-                sh 'echo hello'
-            }
-        
-        }
-        stage('test1') {
-        steps {
-        git url: 'https://github.com/shivapaladugula/spring-petclinic.git',
-        branch: 'main'
-        }
-    }
+node {
+    stage('test') {
+        sh 'echo hello'
     }
 }
